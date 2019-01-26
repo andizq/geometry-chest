@@ -17,7 +17,7 @@ Produces the following mp4:
 
 .. raw:: html
    
-   <iframe width="560" height="315" src="http://www.youtube.com/embed/6Dakd7EIgBE?rel=0" frameborder="0" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://github.com/andizq/geometry-chest/blob/master/trochoid/mv_trochoid.mp4?raw=true" frameborder="0" allowfullscreen></iframe>
    
 cycloid (or brachistocrone) [Rp = Rd]
 =====================================
