@@ -22,13 +22,13 @@ Help
             	                  Defaults to 2*Rd
 	    -o OUTPUT, --output OUTPUT
                	                  Name of the resulting mp4 video. Defaults to
-                      	         'mv_trochoid.mp4'
+                      	          'mv_trochoid.mp4'
 
 Examples
 ========
 
-"prolate" trochoid [Rp > Rd]
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+prolate trochoid [Rp > Rd]
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash 
    
@@ -36,7 +36,7 @@ Examples
 
 Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/#prolate>`_.
    
-cycloid (or brachistocrone) [Rp ^ Rd]
+cycloid (or brachistocrone) [Rp = Rd]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash 
@@ -46,8 +46,8 @@ cycloid (or brachistocrone) [Rp ^ Rd]
 Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/#cycloid>`_.
 
 
-"curtate" trochoid [Rp < Rd]
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+curtate trochoid [Rp < Rd]
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 	
 .. code-block:: bash 
    
