@@ -8,16 +8,20 @@ import os
 #**************************
 #USER's INPUT
 #**************************
-parser = ArgumentParser(prog='Trochoids', description='Making trochoids of different nature')
+parser = ArgumentParser(prog='Trochoids', description='Drawing trochoids!')
 parser.add_argument('-Rd', '--Rd', help='Radius of the reference disc. Defaults to 5')
 parser.add_argument('-Rp', '--Rp', help='Radius of the circle that will trace the trochoid. Defaults to 2*Rd')
+parser.add_argument('-o', '--output', help="Name of the resulting mp4 video. Defaults to 'mv_trochoid.mp4'")
 args = parser.parse_args()
 
-if args.Rd is not None: Rd = args.Rd
-else: Rd = 5
+if args.Rd is not None: Rd = float(args.Rd)
+else: Rd = 5.
 
-if args.Rp is not None: Rp = args.Rp
+if args.Rp is not None: Rp = float(args.Rp)
 else: Rp = 2*Rd
+
+if args.output is not None: output = args.output
+else: output = 'mv_trochoid.mp4'
 
 #----------
 #KINEMATICS
@@ -130,6 +134,6 @@ ani = animation.FuncAnimation(fig, animate, np.arange(0,len(t)),
                               init_func=init, repeat=False)
 
 fps = 1000. / interval #Frames per second (1000 ms / interval)
-name_video = 'mv_trochoid.mp4'
+name_video = output
 ani.save(name_video, fps=fps, dpi=200)
 os.system('open %s'%name_video)

@@ -6,36 +6,53 @@ This repository is intended to be a collection of my geometry-related codes.
 Emulates the path traced by a point on a circle of radius Rp, which is co-rotating and moving forward with a reference disc of radius Rd.
 The resulting traced curve is known as a trochoid (wiki).
 
-`prolate' trochoid [Rp > Rd]
-============================
+Help
+====
 
 .. code-block:: bash 
    
-   $ python trochoid.py -Rd 5 -Rp 10 
+   $ python trochoid.py --help
 
-Produces the following mp4:
+   Drawing trochoids!
 
-.. raw:: html
-   
-   <iframe width="560" height="315" src="https://github.com/andizq/geometry-chest/blob/master/trochoid/mv_trochoid.mp4?raw=true" frameborder="0" allowfullscreen></iframe>
-   
-cycloid (or brachistocrone) [Rp = Rd]
-=====================================
+   optional arguments:
+   	    -h, --help            show this help message and exit
+  	    -Rd RD, --Rd RD       Radius of the reference disc. Defaults to 5
+	    -Rp RP, --Rp RP       Radius of the circle that will trace the trochoid.
+            	                  Defaults to 2*Rd
+	    -o OUTPUT, --output OUTPUT
+               	                  Name of the resulting mp4 video. Defaults to
+                      	         'mv_trochoid.mp4'
+
+Examples
+========
+
+"prolate" trochoid [Rp > Rd]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash 
    
-   $ python trochoid.py -Rd 5 -Rp 5 
+   $ python trochoid.py -Rd 5 -Rp 10 -o prolate.mp4 
 
-Produces the following mp4:   
+Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/#prolate>`_.
+   
+cycloid (or brachistocrone) [Rp ^ Rd]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash 
+   
+   $ python trochoid.py -Rd 5 -Rp 5 -o cycloid.mp4 
+
+Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/#cycloid>`_.
 
 
-`curtate' trochoid [Rp < Rd]
-===================================
+"curtate" trochoid [Rp < Rd]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 	
 .. code-block:: bash 
    
-   $ python trochoid.py -Rd 10 -Rp 5 
+   $ python trochoid.py -Rd 10 -Rp 5 -o curtate.mp4 
 
-Produces the following mp4:
+Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/#curtate>`_.
 
 
