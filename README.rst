@@ -34,7 +34,7 @@ prolate trochoid [Rp > Rd]
    
    $ python trochoid.py -Rd 5 -Rp 10 -o prolate.mp4 
 
-Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/#prolate>`_.
+Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/videos/#prolate>`_.
    
 cycloid (or brachistocrone) [Rp = Rd]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -43,7 +43,7 @@ cycloid (or brachistocrone) [Rp = Rd]
    
    $ python trochoid.py -Rd 5 -Rp 5 -o cycloid.mp4 
 
-Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/#cycloid>`_.
+Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/videos/#cycloid>`_.
 
 
 curtate trochoid [Rp < Rd]
@@ -53,6 +53,6 @@ curtate trochoid [Rp < Rd]
    
    $ python trochoid.py -Rd 10 -Rp 5 -o curtate.mp4 
 
-Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/#curtate>`_.
+Watch the output mp4 video `here <https://andizq.github.io/geometry-chest/trochoid/videos/#curtate>`_.
 
 
