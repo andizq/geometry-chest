@@ -4,7 +4,9 @@ This repository is intended to be a collection of my geometry-related codes.
 ---------
 
 Emulates the path traced by a point on a circle of radius Rp, which is co-rotating and moving forward with a reference disc of radius Rd.
-The resulting traced curve is known as a trochoid (wiki).
+The resulting traced curve is known as a trochoid (`wiki <https://en.wikipedia.org/wiki/Trochoid>`_).
+
+Generates an mp4 video using the `matplotlib.animation` module.
 
 Help
 ====
